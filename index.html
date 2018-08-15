@@ -1,137 +1,34 @@
-<html lang="en">
-<head>
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mobile</title>
-    <style>
-    *{
-        padding: 0;
-        margin: 0;
-    }
-    body,html{
-        font-family: Roboto;
-        width: 100%;
-        height: 100%;
-    }
-    #mobile{
-        /* display: block; */
-        /* align-items: center;
-        justify-content: center; */
-        /* background: black; */
-        width: 100%;
-        height: 100%;
-        /* color:aliceblue; */
-    }
-    h1{
-        /* text-decoration-line: underline; */
-        /* position: absolute; */
-        padding-top: 20px;
-        transition: all ease-in;
-        font-size: 50px;
-        
-    }
-#images{
-    margin-top: 60px;
-    visibility: hidden;
-}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+     <title>Website Title</title><!-- change this -->
+  </head>
+  <body>
 
-button{
-    background: white;
-    color:#c03849;
-    border-radius: 39px;
-    box-shadow: none;
-    border: solid white 1px;
-    font-size: 15px;
-    height: 45px;
-    width: 110px;
-}
-button:hover{
-    background: #c03849;
-    color:white;
-}
-    @keyframes top{
-        0%{
-            top:50%;
-            z-index: 0;
-            opacity: 0;
-        }
-        100%{
-            padding-top: 20px;
-            top: 0%;   
-            align-self: flex-start;
-            z-index: 1;
-        }
-    }
-    img{
-        opacity: 0.7;
-    }
-    img:hover{
-        transform: scale(1.01);
-        transition: all ease-in;
-        opacity: 1;
-    }
-    </style>
-    <script type="text/javascript">
+<div class="navbar">
 
+    <ul>
+      <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">  About</a></li>
+      <li><a href="contact.php">Contact</a></li>
 
-    $(document).ready(function() {
-        
-        $("button").click(function(){
-            // setTimeout(myFunction, 200);
-            setTimeout(line, 250);
-            setTimeout(display, 300);
+    </ul>
 
-        });
-        
-        function display(){
-                $(".images").css("visibility", "visible");    
-            }
-        
-            function myFunction(){
-                $("h1").css("animation", "top 1s 1 ease-in-out ");    
-            }
-
-            function line(){
-            $("h1").css("text-decoration-line", "underline");
-            }
-    });
-        
-    
-    </script>
-</head>
-<body>
-    <div id="mobile">
-<div class="center">
-        <center>
-            <h1>Gallery</h1><br>
-            <button >Show Gallery</button>
-        </center>
 </div>
 
-    <div id="images" class="images">
-            <table style="width:100%">
-                    <tr>
-                      <th><img src="1.jpg" style="width:100%; height: 34vh;"></th>
-                      <th><img src="2.jpg" style="width:100%;height: 34vh; padding-left: 0;"></th> 
-                    </tr>
-                    
-                    <tr>
-                        <th><img src="4.jpg" style="width:100%;height: 34vh;"></th>
-                        <th><img src="5.jpg" style="width:100%;height: 34vh; padding-left: 0;"> </th>
-                    </tr>
-                    <tr>
-                        <th><img src="6.jpg" style="width:100%;height: 34vh;"></th>
-                        <th><img src="2.jpg" style="width:100%;height: 34vh;padding-left: 0;"> </th>
-                    </tr>
-                  
-                    
-                  </table>
-                  
-    </div>
+<div id="background">
 
+    <div class="comp-name"> <h4>Company name/ Website name</h4></div><!-- change this -->
 
-</body>
+</div>
+
+<footer>
+      <address>San Fransisco<br><br>100 Broadway #202 San Francisco, CA 94111</address><!--Change this-->
+
+</footer>
+  </body>
 </html>
